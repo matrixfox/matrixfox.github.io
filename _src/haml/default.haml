@@ -6,7 +6,7 @@
   %meta{"name" => "viewport", "content" => "width=device-width, initial-scale=1.0"}
   %meta{"content" => "", "name" => "description"}
   %meta{"content" => "", "name" => "author"}
-  %title Tader Boilerplate
+  %title Tader Boilerplate{% if page.title }%} - {{page.title}}{% endif %}
   %link(rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css")
 
   / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -18,13 +18,18 @@
   %link(rel="stylesheet" type="text/css" href="css/style.css")
  %body
   %section.container
+   {{content}}
   %footer
    %noscript
     %p#copyrights Copyrights 2013 Matrixfox.com
-   %script(type="text/javascript")
-    var d = new Date();
-    var output = d.getFullYear()
-    document.write("<p id='copyrights'>Copyrights "+ output +" Matrixfox.com</p>");
   %script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
   %script(type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js")
-  %script(type="text/javascript" src="js/script-ck.js")
+  %script(type="text/javascript")
+   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+   document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+   </script>
+   <script type="text/javascript">
+   try {
+   var pageTracker = _gat._getTracker("UA-46141487-1");
+   pageTracker._trackPageview();
+   } catch(err) {}
