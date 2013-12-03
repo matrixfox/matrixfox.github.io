@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+@import "variable.less";
+
+/* Override Hosted Cascading Style Sheets */
+@import "reset.less";
+
+/* Main Style Sheet */
+@import "main.less";
+
+/* iPhone Media Queries */
+@import "iphone.less" only screen and (min-device-width: 320px) and (max-device-width: 480px);
+@import "iphone-portrait.less" only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait);
+@import "iphone-landscape.less" only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape);
+
+/* iPad Media Queries */
+@import "ipad.less" only screen and (min-device-width: 768px) and (max-device-width: 1024px);
+@import "ipad-portrait.less" only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait);
+@import "ipad-landscape.less" only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape);
+
+/* Desktop Media Queries */
+@import "desktop.less" all and (min-width: 1024px) and (min-device-aspect-ratio: 1/1);
