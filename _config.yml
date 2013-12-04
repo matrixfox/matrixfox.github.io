@@ -1,3 +1,4 @@
 markdown: rdiscount
 pygments: true
-permalink: /:title
+permalink: pretty
+exclude: ['README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock']
