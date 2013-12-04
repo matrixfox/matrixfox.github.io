@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'titilliumregular';
+    src: url('http://matrixfox.com/fonts/titillium-regular-webfont.eot');
+    src: url('http://matrixfox.com/fonts/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://matrixfox.com/fonts/titillium-regular-webfont.woff') format('woff'),
+         url('http://matrixfox.com/fonts/titillium-regular-webfont.ttf') format('truetype'),
+         url('http://matrixfox.com/fonts/titillium-regular-webfont.svg#titilliumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-size(@sizeValue) {
+  @remValue: @sizeValue;
+  @pxValue: (@sizeValue * 10);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ * Home / Portfolio
+ *
+ */
+body {
+  background: url('http://matrixfox.com/images/stressed_linen.png') center center;
+  background-color: #000;
+  color: #fff;
+  word-wrap:break-word;
+}
+
+a {
+  color: @red;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Navbar
+ *
+ */
+.navbar-matrix {
+  font-family: 'titilliumregular',sans-serif;
+  text-transform:uppercase;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 30px;
+
+
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+
+a {
+  color: #fff;
+}
+}
+
+
+
+
+
+/* logo */
+.navbar-header {
+
+span {
+  color: @red;
+  font-size: 2.4em;
+}
+}
+
+.navbar-brand {
+  font-family: 'titilliumregular',sans-serif;
+  font-size: 2.4em;
+}
+
+
+
+/* Mobile Toggle Button */
+.navbar-toggle {
+  border: 1px solid rgba(100,100,100,0.4);
+  margin-right: 0;
+
+span {
+  background-color: @red;
+}
+}
+
+
+
+
+
+.active a {
+  color: @red;
+}
+.nav li span { display:none !important; }
+
+
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: rgba(100,0,0,0.8);
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+/* bootstrap reset */
+.nav>li>a {
+  padding: 0px 0px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: rgba(0,0,0,0);
+  color: @red;
+}
+
+
+/*start media querie */
+.nav {
+
+li {
+  text-align: right;
+  margin-left: 28px;
+  font-size: 1.4em;
+}
+
+
+li span {
+  max-width: 100px;
+  font-size: 0.5em;
+  display:inherit !important;
+  color: #fff;
+}
+}/* end .nav */
+
+}
+
+
+
+
+
+
+
+
+/*
+ *
+ * Jumbotron
+ *
+ */
+h4 {
+  font-family: 'titilliumregular',sans-serif;
+  text-transform:uppercase;
+span {
+  color: @red;
+}
+}
+
+ .jumbotron {
+     position: relative;
+     background: none;
+     padding: 0px;
+     margin: 0px;
+     height: 440px;
+     color: #fff;
+
+
+ }
+ .jumbotron:after {
+  content:"";
+  background: url('http://matrixfox.com/images/matrixfox-greendesign-featured.jpg') no-repeat 44% 100%;
+  -webkit-background-size: cover;/* Causes Resizing 1px Left Border deal with it or find hack */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+ }
+
+
+
+
+
+
+
+
+
+
+/*
+ * BANNER
+ *
+ */
+.banner {
+  background-color: @red;
+
+h2 {
+  color: #000;
+  text-transform:uppercase;
+  font-family: 'titilliumregular',sans-serif;
+  span {
+    color: #fff;
+  }
+}
+
+
+}
+
+
+.banner-inner {
+  padding: 20px;
+}
+
+
+.btn-default {
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #000;
+  border-color: #cccccc;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #000;
+  background-color: #fff;
+span {
+  color: black;
+}
+}
+
+
+
+@media screen and (min-width: 1199px) {
+.btn-default {
+  margin-top: 38px;
+}
+}
+
+
+
+
+/*
+ * Portfolio
+ *
+ */
+.portfolio { 
+  position:relative;
+  overflow:hidden;
+}
+
+.overlay {
+  position:absolute;
+  top:100%;
+  margin:0;
+  padding: 10px;
+  box-sizing:border-box;
+  width: 100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.6);
+  color:#fff;
+  font-family:arial;
+  text-align:center;
+  transition:all 0.2s ease-in-out;
+}
+
+.portfolio:hover img { 
+/*  -webkit-filter: contrast(3) grayscale(1); causes chrome/safrai hover flicker */
+  transform: scale(1.1) rotate(2deg);
+}
+
+.portfolio:hover {
+.overlay { top:0; }
+}
+
+
+
+
+
+
+
+/* fix portfolio overlay thumbnail resizing */
+@media screen and (max-width: 1199px) {
+.portfolio { max-height: 176px; }
+}
+
+@media screen and (max-width: 991px) {
+.portfolio { max-height: 270px; }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ *
+ * Footer
+ *
+ */
+footer {
+  clear:both;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+small, p:nth-child(1) {
+  text-transform:uppercase;
+  color: #777;
+}
+}
+
+
+
+
+/*
+ *
+ * Blog
+ *
+ */
+.tweets {
+  padding-bottom: 10px;
+}
+
+.tweets figcaption {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.lastfm h5 {
+  font-family: 'titilliumregular',sans-serif;
+  text-transform:uppercase;
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+
+
+
+
+/*
+ * Top Artists
+ *
+ */
+.lastfm-top  {
+  clear:both;
+
+.row {
+  margin-bottom: 20px;
+  border-top: 1px solid #777;
+}
+
+h5 {
+  font-family: 'titilliumregular',sans-serif;
+  text-transform:uppercase;
+  font-size: 1.3em;
+}
+}
+
+
+.glyphicon-music {
+  font-size: 0.8em;
+}
+
