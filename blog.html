@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog
+---
+
+<h4>Blog<span> Articles</span></h4>
+<article>
+	{% for blog in site.posts %}
+	<figure>
+		<small>Posted: {{blog.posted}}</small>
+		<figcaption><a href="{{blog.url}}"><h2>{{blog.title}}</h2></a>{{blog.meta}}</figcaption>
+	</figure>
+	{% endfor %}
+</article>
