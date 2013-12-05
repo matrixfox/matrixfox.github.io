@@ -192,6 +192,11 @@ a:hover {
   }
   /* end .nav */
 }
+@media screen and (max-width: 991px) {
+  .navbar-header span {
+    font-size: 2em;
+  }
+}
 /*
  *
  * Jumbotron
@@ -266,7 +271,7 @@ h4 span {
 .open .dropdown-toggle.btn-default span {
   color: black;
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .btn-default {
     margin-top: 38px;
   }
@@ -333,37 +338,23 @@ footer p:nth-child(1) {
  * Blog
  *
  */
-.tweets {
-  padding-bottom: 10px;
+figcaption a {
+  display: inline-block;
 }
-.tweets figcaption {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-.lastfm h5 {
-  font-family: 'titilliumregular', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  margin-left: 10px;
-}
-/*
- * Top Artists
- *
- */
-.lastfm-top {
-  clear: both;
-}
-.lastfm-top .row {
-  margin-bottom: 20px;
+.post {
   border-top: 1px solid #777;
 }
-.lastfm-top h5 {
-  font-family: 'titilliumregular', sans-serif;
-  text-transform: uppercase;
-  font-size: 1.3em;
+/*
+ *
+ * 404
+ *
+ */
+.four04 img {
+  max-width: 100%;
 }
-.glyphicon-music {
-  font-size: 0.8em;
+.four04 h1,
+.four04 .h1 {
+  font-size: 8em;
 }
 /* iPhone Media Queries */
 /* iPad Media Queries */

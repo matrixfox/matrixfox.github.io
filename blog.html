@@ -1,14 +1,15 @@
 ---
 layout: default
 title: Blog
+meta: Read all about Matrixfox's blog adventures. Today I'll do this, tomorrow I'll do that.
 ---
 
-<h4>Blog<span> Articles</span></h4>
-<article>
+<h4>News<span> Articles</span></h4>
+<article class="post">
 	{% for blog in site.posts %}
 	<figure>
 		<small>Posted: {{blog.posted}}</small>
-		<figcaption><a href="{{blog.url}}"><h2>{{blog.title}}</h2></a>{{blog.meta}}</figcaption>
+		<figcaption><a href="{{blog.url}}"><h2>{{blog.title}}</h2></a><br>{{blog.meta}}</figcaption>
 	</figure>
 	{% endfor %}
 </article>
