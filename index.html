@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Portfolio
-meta: Matrixfox is my offical portfolio demo site. Not the best, but not the worst!
+meta: Matrixfox is my offical portfolio site. Always working in Mobile and Web Development. A small handpicked selection for a live demo. Honorably Hosted by GitHub
 ---
 <!-- JUMBOTRON
       ================================================== -->
@@ -22,36 +22,16 @@ meta: Matrixfox is my offical portfolio demo site. Not the best, but not the wor
       </article>
       <!-- PORTFOLIO
       ================================================== -->
-      <!-- 1ST ROW -->
       <article class="row">
-
-        <a href="http://codepen.io/matrixfox/pen/emqAh">
+        {% for portfolio in site.pages %}
+        {% if portfolio.type == 'portfolio' %}
+        <a href="{{portfolio.source}}">
         <figure class="col-sm-6 col-md-3 portfolio">
-          <img src="/images/knotable-thumb.png" alt="..." class="thumbnail">
-          <figcaption class="overlay"><p>I've converted the lovely knotable login found on Dribble originally, but you can find it on Pentrest.</p></figcaption>
+          <img src="{{portfolio.image}}" alt="{{portfolio.title}}" class="thumbnail">
+          <figcaption class="overlay"><p>{{portfolio.content}}</p></figcaption>
         </figure>
         </a>
-
-        <a href="#">
-        <figure class="col-sm-6 col-md-3 portfolio">
-          <img src="/images/bootstrap-thumb.jpg" alt="Bootstrap 3 with a Custom Panel" class="thumbnail">
-          <figcaption class="overlay"><p>Bootstrap 3 with my custom panel to tweak the style ever so slightly.</p></figcaption>
-        </figure>
-        </a>
-
-        <a href="#">
-        <figure class="col-sm-6 col-md-3 portfolio">
-          <img src="/images/pixel-matter-thumb.jpg"  alt="Pixel Matter.co Fluid-Width Design" class="thumbnail">
-          <figcaption class="overlay"><p>Pixel Matter.co was a spure of a moment. She has a fixed background on a fluid-width design.</p></figcaption>
-        </figure>
-        </a>
-
-        <a href="#">
-        <figure class="col-sm-6 col-md-3 portfolio">
-          <img src="/images/matrixfox-thumb.jpg"  alt="Matrixfox.com Info Block" class="thumbnail">
-          <figcaption class="overlay"><p>A old pen, but spiced up. Simple Click and Drag, but can't be dragged off the screen.</p></figcaption>
-        </figure>
-        </a>
-
+        {% endif %}
+        {% endfor %}
       </article>
-      <!--  END 1ST ROW -->
+      <!--  END PORTFOLIO -->
