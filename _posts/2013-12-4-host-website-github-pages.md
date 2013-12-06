@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How to Host a Webpage on GitHub Pages
-meta: Hosting with GitHub Pages is as easy as cake, and that's no lie! This guide will show you how setup is a cinch.
+meta: Hosting with GitHub Pages is as easy as cake, and that's no lie! This guide will show you how setting up is a cinch.
 posted: 04-12-2013
-category: github
+category: blog
 ---
 
 <p>Creating a GitHub Page is super simple and easy. There's two different ways of creating <a href="http://pages.github.com/">GitHub Pages</a>. Making a repository that matches your GitHub user name will create a main page. From then on you'll edit like you do with any other web page. Note: You can setup a GitHub page for any git repositories. How about we get started!</p>
