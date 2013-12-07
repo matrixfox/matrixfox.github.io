@@ -44,7 +44,14 @@
       {{content}}
       <footer>
         <p class="pull-right"><a class="backtotop" href="#">Back to top <span class="glyphicon glyphicon-arrow-up"></span></a></p>
-        <small>&copy; <a href="https://github.com/matrixfox">Matrixfox</a> 2013</small>
+        <noscript>
+          © Matrixfox 2013 *ENABLE JAVASCRIPT*
+        </noscript>
+        <script type="text/javascript">
+          var d = new Date();
+          var output = d.getFullYear()
+          document.write("<small>© <a href=\"https://github.com/matrixfox\">Matrixfox</a> "+ output +"</small>");
+        </script>
       </footer>
       <!-- /END CONTAINER -->
     </section>
