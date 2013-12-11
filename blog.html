@@ -5,9 +5,9 @@ meta: Read all about Matrixfox's blog adventures. Monthly posts are added. In th
 ---
 
 <h4>News<span> Articles</span></h4>
-<article class="post">
+<article>
 	{% for blog in site.posts %}
-	<figure>
+	<figure class="post">
 		<small>Posted: {{blog.posted}}</small>
 		<figcaption><a href="{{blog.url}}"><h2>{{blog.title}}</h2></a><br>{{blog.meta}}</figcaption>
 	</figure>
