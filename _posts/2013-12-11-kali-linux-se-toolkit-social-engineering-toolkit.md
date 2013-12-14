@@ -102,7 +102,7 @@ category: blog
 <br>
 
 <h3>Removing</h3>
-<p>As of right now <a href='#'>Comodo Internet Secuirty</a> detects the following threat.</p>
+<p>As of right now <a href='http://www.comodo.com/home/internet-security/free-internet-security.php'>Comodo Internet Secuirty</a> detects the following threat.</p>
 <h6>TrojWare.Win32.Rozena.A@275288211</h6>
 <ul>
 <li>C:\Users\john\AppData\Local\Temp\radCC758.tmp\svchost.exe</li>
