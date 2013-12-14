@@ -89,6 +89,7 @@ p {
   padding-left: 0px;
 }
 .thumbnail {
+  max-width: 100%;
   padding: 0px;
   margin-bottom: 0px;
   border: 0px solid #ddd;
