@@ -1,0 +1,1 @@
+var delay=function(){var e=0;return function(t,n){clearTimeout(e);e=setTimeout(t,n)}}();$(function(){var e=100;$(window).resize(function(){delay(function(){var e=$(window).width();e>=768&&e<=959||e>=480&&e<=767||e<=479},e)});$(window).resize()});
