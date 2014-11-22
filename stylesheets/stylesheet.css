@@ -109,6 +109,11 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+body {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
 h2 {
   padding-bottom: 10px;
 }
