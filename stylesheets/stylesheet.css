@@ -183,7 +183,7 @@ a:hover {
 }
 @media screen and (max-width: 435px) {
   .navbar-header span {
-    font-size: 1.4em;
+    font-size: 1.18em;
   }
 }
 @media screen and (min-width: 768px) {
