@@ -181,6 +181,7 @@ a:hover {
 }
 .nav li span {
   display: none !important;
+  line-height: 1;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
