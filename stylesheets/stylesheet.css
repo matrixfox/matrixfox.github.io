@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* Override Hosted Cascading Style Sheets */
+.nav > li > a {
+  padding: 10px 0px;
+}
 .navbar-brand {
   padding: 0px 0px;
 }
@@ -186,6 +189,11 @@ a:hover {
 @media screen and (max-width: 435px) {
   .navbar-header span {
     font-size: 1.18em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    margin: 7.5px 0px;
   }
 }
 @media screen and (min-width: 768px) {
