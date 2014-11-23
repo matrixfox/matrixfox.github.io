@@ -11,13 +11,15 @@ meta: Matrixfox is my official portfolio website. A small live demo of my newest
       ================================================== -->
       <article class="banner row">
         <section class="banner-inner col-lg-10">
-          <h2>pixelmatter.co /<span> web &amp; mobile development</span></h2>
-          <p>I need money for Bourbon and Anime too, but Link advertising services are the lowest form of PPC! Eat, Breathe and Sleep Web Development. Wake Up, Rinse and Repeat. Squandering a gift is like dying young, a waste...</p>
+          {% for blog in paginator.posts %}
+          <h2>{{blog.title}}</span></h2>
+          <p>{{blog.meta}}</p>
         </section>
         <section class="col-lg-2 text-center">
           <div class="btn-group">
-            <a href="http://matrixfox.com/greendesign/"><div class='btn btn-default'>Continue To Read <span class="glyphicon glyphicon-share-alt"></span></div></a>
+            <a href="{{blog.url}}"><div class='btn btn-default'>Continue To Read <span class="glyphicon glyphicon-share-alt"></span></div></a>
           </div>
+          {% endfor %}
         </section>
       </article>
       <!-- PORTFOLIO
