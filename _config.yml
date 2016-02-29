@@ -1,5 +1,6 @@
 markdown: kramdown
-pygments: true
+highlighter: true
 permalink: pretty
 paginate: 1
 exclude: ['README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'CNAME', 'config.codekit']
+gems: [jekyll-paginate]
