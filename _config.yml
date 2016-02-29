@@ -1,4 +1,4 @@
-markdown: rdiscount
+markdown: kramdown
 pygments: true
 permalink: pretty
 paginate: 1
