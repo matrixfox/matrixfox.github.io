@@ -1,3 +1,6 @@
+/*
+ *  Fonts
+ */
 @font-face {
     font-family: 'titilliumregular';
     src: url('http://matrixfox.com/fonts/titillium-regular-webfont.eot');
@@ -9,6 +12,70 @@
     font-style: normal;
 }
 
+
+/*
+ *  HTML Tags
+ */
+body {
+  max-width: 1400px;
+  margin-left:auto;
+  margin-right:auto;
+  background: url('http://matrixfox.com/images/stressed_linen.png') center center;
+  // wordpress support
+  //background: url('/wp-content/themes/ocultism/images/stressed_linen.png') center center;
+  background-color: #000;
+  color: #fff;
+  word-wrap:break-word;
+}
+img {
+  max-width: @fluid-max-width;
+}
+iframe {
+  max-width: @fluid-max-width;
+  margin-top: 10px;
+}
+
+input {
+    color: black;
+}
+textarea {
+  max-width: @fluid-max-width;
+  color: black;
+}
+
+/* table */
+table {
+  width: @fluid-max-width;
+  border-collapse: collapse;
+}
+/* table color clash */
+tr:nth-of-type(odd) {
+  background: @red;
+}
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td, th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* font */
+h1, h2, h3, h4, h5 {
+  font-family: 'titilliumregular',sans-serif;
+}
+h2 {
+  padding-bottom: 10px;
+}
+a {
+  color: @red;
+}
+a:hover {
+  color: white;
+}
 .font-size(@sizeValue) {
   @remValue: @sizeValue;
   @pxValue: (@sizeValue * 10);
@@ -16,32 +83,10 @@
   font-size: ~"@{remValue}rem";
 }
 
-body {
-  max-width: 1400px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-
-
-
-h2 {
-  padding-bottom: 10px;
-}
-
-
-h5 {
-  font-family: 'titilliumregular',sans-serif;
-}
-
-
-
 
 
 /*
- *
- * Home / Portfolio
- *
+ *  Home / Portfolio
  */
 body {
   background: url('/images/stressed_linen.png') center center;
@@ -59,32 +104,17 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
- * Navbar
- *
+ *  Navbar
  */
 .navbar-matrix {
   font-family: 'titilliumregular',sans-serif;
   text-transform:uppercase;
   border-bottom: 1px solid #eeeeee;
-  margin-top: 30px;
 
+  margin-top: 9px;/* eye balling the lineheight bug */
+  margin-left: 15px;
+  margin-right: 15px;
 
 -webkit-user-select: none;
 -khtml-user-select: none;
@@ -92,34 +122,44 @@ a:hover {
 -ms-user-select: none;
 user-select: none;
 
-a {
-  color: #fff;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
+
+//wordpress
+/*
+#branding {
+    line-height: 1;
+    h1 {
+        line-height: 1;
+    }
+
+  #site-title {
+    font-size: 36px;
+  }
+  #site-description {
+    color: @red;
+    font-size: 2em;
+    padding-bottom: 5px;
+
+  }
 }
-
-
-
-
+*/
 
 /* logo */
 .navbar-header {
-
 span {
   color: @red;
   font-size: 2em;
 }
 }
 
-
-
-
-
 .navbar-brand {
   font-family: 'titilliumregular',sans-serif;
   font-size: 2.4em;
 }
-
-
 
 /* Mobile Toggle Button */
 .navbar-toggle {
@@ -131,27 +171,49 @@ span {
 }
 }
 
+//wordpress
+/*
+.current_page_item a {
+  color: @red;
+}
 
+/* hover effects
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: rgba(0,0,0,0);
+  color: @red;
+}
 
+/* tempStrap: until nav description tags
+.navbar-nav {
+  margin-top: 18px;
+}
+
+/* sidebar
+#s {
+  color: black;
+}
+
+*/
 
 
 .active a {
   color: @red;
 }
-.nav li span {
-  display:none !important;
-  line-height: 1;
-}
-
-
 
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: rgba(100,0,0,0.8);
 }
 
+.nav li span {
+  display:none !important;
+  line-height: 1;
+}
 
-
+/*
+ *  Navbar Media
+ */
 @media screen and (max-width: 435px) {
 .navbar-header {
   span {
@@ -196,14 +258,26 @@ span {
 
 
 
+/*
+ *  WordPress Home
+ */
+/*
+.page-title {
+    font-size: 1.5em;
+    text-transform:uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ /*   line-height: 1.25; fixes flicker bug
 
-
+    span {
+        color: @red;
+    }
+}
+*/
 
 
 /*
- *
- * Jumbotron
- *
+ * Static Jumbotron
  */
 h4 {
   font-family: 'titilliumregular',sans-serif;
@@ -220,8 +294,6 @@ span {
      margin: 0px;
      height: 440px;
      color: #fff;
-
-
  }
  .jumbotron:after {
   content:"";
@@ -230,7 +302,6 @@ span {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -239,35 +310,21 @@ span {
   z-index: -1;
  }
 
-
-
-
-
-
-
-
-
-
 /*
  * BANNER
- *
  */
 .banner {
   background-color: @red;
 
-h2 {
-  color: #000;
-  text-transform:uppercase;
-  font-family: 'titilliumregular',sans-serif;
-  span {
-    color: #fff;
-  }
+    h2 {
+      color: #000;
+      text-transform:uppercase;
+      font-family: 'titilliumregular',sans-serif;
+      span {
+        color: #fff;
+      }
+    }
 }
-
-
-}
-
-
 .banner-inner {
   padding: 20px;
 }
@@ -279,7 +336,6 @@ h2 {
   background-color: #000;
   border-color: #cccccc;
 }
-
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
@@ -292,24 +348,30 @@ span {
 }
 }
 
-
-
+/*
+ *  Banner Media
+ */
 @media screen and (min-width: 1200px) {
 .btn-default {
   margin-top: 38px;
 }
 }
 
-
-
-
 /*
- * Portfolio
- *
+ *  Portfolio
  */
 .portfolio {
   position:relative;
   overflow:hidden;
+}
+
+.portfolio:hover img {
+/*  -webkit-filter: contrast(3) grayscale(1); causes chrome/safrai hover flicker */
+  transform: scale(1.1) rotate(2deg);
+}
+
+.portfolio:hover {
+.overlay { top:0; }
 }
 
 .overlay {
@@ -327,56 +389,28 @@ span {
   transition:all 0.2s ease-in-out;
 }
 
-.portfolio:hover img {
-/*  -webkit-filter: contrast(3) grayscale(1); causes chrome/safrai hover flicker */
-  transform: scale(1.1) rotate(2deg);
-}
-
-.portfolio:hover {
-.overlay { top:0; }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*
- *
- * Footer
- *
+ *  Blog
  */
-footer {
-  clear:both;
-  border-top: 1px solid #fff;
-  padding-top: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-
-small, p:nth-child(1) {
-  text-transform:uppercase;
-  color: #777;
+//wordpress
+/*
+.post:nth-of-type(odd) {
+  background: rgba(88,88,88,0.3);
 }
+.post {
+border-bottom: 1px solid #eeeeee;
 }
-
+.post:last-child {
+  border-bottom: 0px;
+}
+*/
 
 
 
 /*
- *
- * Blog
- *
+ *  Blog
  */
 figcaption a {
 display:inline-block;
@@ -385,11 +419,6 @@ display:inline-block;
   border-top: 1px solid #777;
   margin-top: 20px;
 }
-
-
-
-
-
 
 
 table {
@@ -411,14 +440,57 @@ td, th {
 }
 
 
-
-
+/*
+ *  Contact
+ */
+//wordpress
+/*
+h1.entry-title  {
+    font-size: 1.5em;
+    text-transform:uppercase;
+}
+*/
 
 
 /*
- *
- * 404
- *
+ *  Footer
+ */
+//wordpress
+/*
+#footer {
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+
+#copyright, p:nth-child(1) {
+  text-transform:uppercase;
+  color: #777;
+  font-size: 0.8em;
+}
+}
+*/
+
+/*
+ *  Footer
+ */
+footer {
+  clear:both;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+small, p:nth-child(1) {
+  text-transform:uppercase;
+  color: #777;
+}
+}
+
+
+/*
+ *  404
  */
 .four04 {
 img {max-width: 100%;}
@@ -426,3 +498,74 @@ h1, .h1 {
 font-size: 8em;
 }
 }
+
+
+//wordpress
+/* extras
+.show-grid {
+    padding-top: 10px;
+padding-bottom: 10px;
+background-color: #eee;
+background-color: rgba(86, 61, 124, .15);
+border: 1px solid #ddd;
+border: 1px solid rgba(86, 61, 124, .2)
+}
+*/
+
+
+/*
+ *  Media Queries
+ */
+//wordpress
+/*
+/* banner
+@media screen and (min-width: 1200px) {
+.btn-default {
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+}
+*/
+
+/*
+redo
+*/
+/* sidebar */
+/*
+@media screen and (max-width: 989px) {
+#sidebar {
+  border-top: 1px solid #eeeeee;
+}
+}
+*/
+
+/* nav */
+/*
+@media screen and (max-width: 767px) {
+.nav li {
+  padding-bottom: 15px;
+}
+.nav li:last-child {
+  padding-bottom: 0px;
+}
+.navbar-nav {
+  margin: 7.5px 0px;
+}
+}
+
+@media screen and (min-width: 767px) {
+  .nav {
+  li {
+    text-align: right;
+    margin-left: 28px;
+    font-size: 1.4em;
+  }
+  li span {
+    max-width: 100px;
+    font-size: 0.5em;
+    display:inherit !important;
+    color: #fff;
+  }
+}
+}
+*/
