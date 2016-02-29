@@ -1,5 +1,5 @@
 markdown: kramdown
-highlighter: true
+rouge: true
 permalink: pretty
 paginate: 1
 exclude: ['README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'CNAME', 'config.codekit']
