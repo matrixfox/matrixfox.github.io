@@ -17,9 +17,8 @@ Pros
 
 Cons
 <ul>
-	<li>777 in web dictionary</li>
 	<li>Comment Injection</li>
-	<li>Only Unencrypted Browsing</li>
+	<li>Only Unencrypted Browsing (HTTP)</li>
 	<li>Robust Server / Performance Latency</li>
 </ul>
 
