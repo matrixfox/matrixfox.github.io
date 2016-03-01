@@ -28,7 +28,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <h1 class="navbar-brand">Matrixfox</h1><br><span class="motto">Software Engineer</span>
+          {% if page.url == '/' %}<h1 class="navbar-brand"><a href="/">Matrixfox</a></h1><br><span class="motto">Software Engineer</span>{% endif %}
+          {% if page.url != '/' %}<section class="navbar-brand"><a href="/">Matrixfox</a></section><br><span class="motto">Software Engineer</span>{% endif %}
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
