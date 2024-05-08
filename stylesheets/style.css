@@ -1,0 +1,522 @@
+@charset "utf-8";
+/*
+ *  WordPress Variables
+ */
+/*
+@font-src: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.eot';
+@font-src-embedded-opentype: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.eot?#iefix';
+@font-src-woff: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.woff';
+@font-src-truetype: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.ttf';
+@font-src-svg: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.svg#titilliumregular';
+*/
+/*
+ *  Variables
+ */
+/* Override Hosted Cascading Style Sheets */
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+p {
+  margin: 0 0 0px;
+}
+button:focus {
+  outline: -webkit-focus-ring-color none;
+}
+code {
+  white-space: normal;
+}
+.nav > li > a {
+  padding: 10px 0px;
+}
+.navbar {
+  margin-bottom: 0px;
+  border: 0px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+  }
+}
+.navbar-brand {
+  padding: 0px 0px;
+}
+.navbar-toggle {
+  margin-top: 0px;
+}
+.navbar-collapse {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@media (min-width: 768px) {
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 0px;
+  }
+}
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.thumbnail {
+  max-width: 100%;
+  padding: 0px;
+  margin-bottom: 0px;
+  border: 0px solid #ddd;
+  border-radius: 0px;
+}
+.breadcrumb {
+  background-color: transparent;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.breadcrumb > li + li:before {
+  padding: 0;
+  padding-left: 5px;
+}
+/* Main Style Sheet */
+/*
+ *  Fonts
+ */
+@font-face {
+  font-family: 'titilliumregular';
+  src: url('https://github.com/matrixfox/matrixfox.github.io/blob/master/fonts/titillium-regular-webfont.eot');
+  src: url('https://github.com/matrixfox/matrixfox.github.io/blob/master/fonts/titillium-regular-webfont.eot?#iefix') format('embedded-opentype'), url('https://github.com/matrixfox/matrixfox.github.io/blob/master/fonts/titillium-regular-webfont.woff') format('woff'), url('https://github.com/matrixfox/matrixfox.github.io/blob/master/fonts/titillium-regular-webfont.ttf') format('truetype'), url('https://github.com/matrixfox/matrixfox.github.io/blob/master/fonts/titillium-regular-webfont.svg#titilliumregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+ *  HTML Tags
+ */
+body {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url('http://matrixfox.com/images/stressed_linen.png') center center;
+  background-color: #000;
+  color: #fff;
+  word-wrap: break-word;
+}
+img {
+  max-width: 100%;
+}
+iframe {
+  max-width: 100%;
+  margin-top: 10px;
+}
+input {
+  color: black;
+}
+textarea {
+  max-width: 100%;
+  color: black;
+}
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* table color clash */
+th {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+td,
+th {
+  padding: 6px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+/* font */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'titilliumregular', sans-serif;
+}
+a {
+  color: #f21d2f;
+}
+a:hover {
+  color: white;
+}
+/*
+ *  Navbar
+ */
+.navbar-matrix {
+  font-family: 'titilliumregular', sans-serif;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.navbar-matrix a {
+  color: #fff;
+  text-decoration: none;
+}
+/* logo */
+.navbar-header span {
+  color: #f21d2f;
+  font-size: 2em;
+}
+.navbar-brand {
+  font-family: 'titilliumregular', sans-serif;
+  font-size: 2.4em;
+}
+/* Mobile Toggle Button */
+.navbar-toggle {
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  margin-right: 0;
+}
+.navbar-toggle span {
+  background-color: #f21d2f;
+}
+/* hover effects */
+/* tempStrap: until nav description tags */
+/* sidebar */
+.active a {
+  color: #f21d2f;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: rgba(100, 0, 0, 0.8);
+}
+.nav li span {
+  display: none !important;
+  line-height: 1;
+}
+/*
+ *  Navbar Media
+ */
+@media screen and (max-width: 435px) {
+  .navbar-header span {
+    font-size: 1.18em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    margin: 7.5px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* bootstrap reset */
+  .nav > li > a {
+    padding: 0px 0px;
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background-color: rgba(0, 0, 0, 0);
+    color: #f21d2f;
+  }
+  .nav li {
+    text-align: right;
+    margin-left: 28px;
+    font-size: 1.4em;
+  }
+  .nav li span {
+    max-width: 100px;
+    font-size: 0.5em;
+    display: inherit !important;
+    color: #fff;
+  }
+  /* end .nav */
+}
+/* end min-width: 768px */
+/*
+ *  Home / Portfolio
+ */
+body {
+  background: url('/images/stressed_linen.png') center center;
+  background-color: #000;
+  color: #fff;
+  word-wrap: break-word;
+}
+a {
+  color: #f21d2f;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.breadcrumb {
+  text-transform: uppercase;
+}
+/*
+ *  WordPress Home
+ */
+/*   line-height: 1.25; fixes flicker bug */
+/*
+ * Static Jumbotron
+ */
+h4 {
+  font-family: 'titilliumregular', sans-serif;
+  text-transform: uppercase;
+}
+h4 span {
+  color: #f21d2f;
+}
+.jumbotron {
+  position: relative;
+  background: none;
+  padding: 0px;
+  margin: 0px;
+  height: 440px;
+  color: #fff;
+}
+.jumbotron:after {
+  content: "";
+  background: url('/images/matrixfox-greendesign-featured.jpg') no-repeat 44% 100%;
+  /* Causes Resizing 1px Left Border deal with it or find hack */
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+/*
+ * BANNER
+ */
+.banner {
+  background-color: #f21d2f;
+}
+.banner h2 {
+  color: #000;
+  text-transform: uppercase;
+  font-family: 'titilliumregular', sans-serif;
+}
+.banner h2 span {
+  color: #fff;
+}
+.banner-inner {
+  padding: 20px;
+}
+.btn-default {
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #000;
+  border-color: #cccccc;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #000;
+  background-color: #fff;
+}
+.btn-default:hover span,
+.btn-default:focus span,
+.btn-default:active span,
+.btn-default.active span,
+.open .dropdown-toggle.btn-default span {
+  color: black;
+}
+/*
+ *  Banner Media
+ */
+@media screen and (min-width: 1200px) {
+  .btn-default {
+    margin-top: 38px;
+  }
+}
+/*
+ *  Portfolio
+ */
+.portfolio {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio:hover img {
+  /*  -webkit-filter: contrast(3) grayscale(1); causes chrome/safrai hover flicker */
+  -webkit-transform: scale(1.1) rotate(2deg);
+          transform: scale(1.1) rotate(2deg);
+}
+.portfolio:hover .overlay {
+  top: 0;
+}
+.overlay {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: arial;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/*
+ *  Blog
+ */
+figcaption a {
+  display: inline-block;
+}
+.post {
+  border-top: 1px solid #777;
+  margin-top: 20px;
+}
+/*
+ *  Contact
+ */
+/*
+ *  Footer
+ */
+footer {
+  clear: both;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+footer small,
+footer p:nth-child(1) {
+  text-transform: uppercase;
+  color: #777;
+}
+/*
+ *  404
+ */
+.four04 img {
+  max-width: 100%;
+}
+.four04 h1,
+.four04 .h1 {
+  font-size: 8em;
+}
+/* extras
+.show-grid {
+    padding-top: 10px;
+padding-bottom: 10px;
+background-color: #eee;
+background-color: rgba(86, 61, 124, .15);
+border: 1px solid #ddd;
+border: 1px solid rgba(86, 61, 124, .2)
+}
+*/
+/*
+ *  Media Queries
+ */
+/*
+/* banner
+@media screen and (min-width: 1200px) {
+.btn-default {
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+}
+*/
+/*
+redo
+*/
+/* sidebar */
+/*
+@media screen and (max-width: 989px) {
+#sidebar {
+  border-top: 1px solid #eeeeee;
+}
+}
+*/
+/* nav */
+/*
+@media screen and (max-width: 767px) {
+.nav li {
+  padding-bottom: 15px;
+}
+.nav li:last-child {
+  padding-bottom: 0px;
+}
+.navbar-nav {
+  margin: 7.5px 0px;
+}
+}
+
+@media screen and (min-width: 767px) {
+  .nav {
+  li {
+    text-align: right;
+    margin-left: 28px;
+    font-size: 1.4em;
+  }
+  li span {
+    max-width: 100px;
+    font-size: 0.5em;
+    display:inherit !important;
+    color: #fff;
+  }
+}
+}
+*/
+.title {
+  padding-bottom: 25px;
+}
+/* iPhone Media Queries */
+/* iPad Media Queries */
+/* Desktop Media Queries */
