@@ -13,7 +13,7 @@ pagination:
       ================================================== -->
       <article class="banner row">
         <section class="banner-inner col-lg-10">
-          {% for blog in paginator.posts %}
+          {% for blog in site.posts limit:1 %}
           <h2>{{blog.title}}</span></h2>
           <p>{{blog.meta}}</p>
         </section>
