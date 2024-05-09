@@ -1,7 +1,12 @@
 markdown: kramdown
 rouge: true
 permalink: pretty
-paginate: 1
 exclude: ['README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'CNAME', 'config.codekit', 'prepros.config']
-gems: [jekyll-paginate]
-plugins: [jekyll-paginate]
+gems:
+  - jekyll-paginate-v2
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 1
+  limit: 1
