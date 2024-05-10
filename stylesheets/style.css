@@ -1,15 +1,5 @@
 @charset "utf-8";
 /*
- *  WordPress Variables
- */
-/*
-@font-src: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.eot';
-@font-src-embedded-opentype: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.eot?#iefix';
-@font-src-woff: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.woff';
-@font-src-truetype: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.ttf';
-@font-src-svg: ~'/wp-content/themes/ocultism/fonts/titillium-regular-webfont.svg#titilliumregular';
-*/
-/*
  *  Variables
  */
 /* Override Hosted Cascading Style Sheets */
@@ -228,9 +218,6 @@ a:hover {
 .navbar-toggle span {
   background-color: #f21d2f;
 }
-/* hover effects */
-/* tempStrap: until nav description tags */
-/* sidebar */
 .active a {
   color: #f21d2f;
 }
@@ -298,10 +285,6 @@ a:hover {
 .breadcrumb {
   text-transform: uppercase;
 }
-/*
- *  WordPress Home
- */
-/*   line-height: 1.25; fixes flicker bug */
 /*
  * Static Jumbotron
  */
@@ -423,7 +406,6 @@ figcaption a {
  *  Contact
  */
 .twitter {
-  margin-top: 10px;
   margin-bottom: 20px;
 }
 /*
@@ -454,72 +436,6 @@ footer p:nth-child(1) {
 .four04 h1,
 .four04 .h1 {
   font-size: 8em;
-}
-/* extras
-.show-grid {
-    padding-top: 10px;
-padding-bottom: 10px;
-background-color: #eee;
-background-color: rgba(86, 61, 124, .15);
-border: 1px solid #ddd;
-border: 1px solid rgba(86, 61, 124, .2)
-}
-*/
-/*
- *  Media Queries
- */
-/*
-/* banner
-@media screen and (min-width: 1200px) {
-.btn-default {
-  margin-top: 38px;
-  margin-bottom: 38px;
-}
-}
-*/
-/*
-redo
-*/
-/* sidebar */
-/*
-@media screen and (max-width: 989px) {
-#sidebar {
-  border-top: 1px solid #eeeeee;
-}
-}
-*/
-/* nav */
-/*
-@media screen and (max-width: 767px) {
-.nav li {
-  padding-bottom: 15px;
-}
-.nav li:last-child {
-  padding-bottom: 0px;
-}
-.navbar-nav {
-  margin: 7.5px 0px;
-}
-}
-
-@media screen and (min-width: 767px) {
-  .nav {
-  li {
-    text-align: right;
-    margin-left: 28px;
-    font-size: 1.4em;
-  }
-  li span {
-    max-width: 100px;
-    font-size: 0.5em;
-    display:inherit !important;
-    color: #fff;
-  }
-}
-}
-*/
-.title {
-  padding-bottom: 25px;
 }
 /* iPhone Media Queries */
 /* iPad Media Queries */
