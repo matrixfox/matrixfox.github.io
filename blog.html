@@ -3,12 +3,13 @@ layout: default
 title: Blog
 meta: Read all about Matrixfox's blog adventures. Monthly posts are added. In the future check back for more news articles.
 ---
-
-<h4>News<span> Articles</span></h4>
-<article>
-	{% for blog in site.posts %}
-	<figure class="post">
-		<figcaption><a href="{{blog.url}}"><h2>{{blog.title}}</h2></a><br><small>Posted: {{blog.posted}}</small><br>{{blog.meta}}</figcaption>
-	</figure>
-	{% endfor %}
-</article>
+<div class="blog">
+	<h4>News<span> Articles</span></h4>
+	<article>
+		{% for blog in site.posts %}
+		<figure class="post">
+			<figcaption><a href="{{blog.url}}"><h2>{{blog.title}}</h2></a><br><small>Posted: {{blog.posted}}</small><br>{{blog.meta}}</figcaption>
+		</figure>
+		{% endfor %}
+	</article>
+</div>
