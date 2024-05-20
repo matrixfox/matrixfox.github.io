@@ -3,6 +3,10 @@
  *  Variables
  */
 /* Override Hosted Cascading Style Sheets */
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
 h1,
 h2,
 h3 {
@@ -14,9 +18,6 @@ p {
 }
 button:focus {
   outline: -webkit-focus-ring-color none;
-}
-code {
-  white-space: normal;
 }
 .nav > li > a {
   padding: 10px 0px;
@@ -137,7 +138,6 @@ body {
   background: url('http://matrixfox.com/images/stressed_linen.png') center center;
   background-color: #000;
   color: #fff;
-  word-wrap: break-word;
 }
 img {
   max-width: 100%;
@@ -273,7 +273,6 @@ body {
   background: url('/images/stressed_linen.png') center center;
   background-color: #000;
   color: #fff;
-  word-wrap: break-word;
 }
 a {
   color: #f21d2f;
