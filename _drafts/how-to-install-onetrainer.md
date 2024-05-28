@@ -7,27 +7,48 @@ category: blog
 draft: true
 ---
 
-To install OneTrainer from GitHub, follow these steps:
+OneTrainer is a comprehensive tool designed for training Stable Diffusion models. Providing a streamlined and efficient process for fine-tuning various versions, including Stable Diffusion 1.5, 2.0, 2.1, SDXL, Würstchen-v2, and inpainting models. To install OneTrainer from GitHub, follow these steps:
+
+## Prerequisites
+
+Before you begin, ensure you have:
+- Python 3.8 or later installed
+- pip (Python package installer) installed
+- Git installed
+
+## Downloading and Installing
 
 1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/Nerogar/OneTrainer.git
-    ```
+```bash
+git clone https://github.com/Nerogar/OneTrainer.git
+```
 
 2. **Navigate to the Directory**:
-    ```bash
-    cd OneTrainer
-    ```
+```bash
+cd OneTrainer
+```
 
-3. **Install Dependencies**:
-    Ensure you have Python and pip installed. Then, install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Create Python Environment**:
+```bash
+python -m venv venv
+```
 
-4. **Run OneTrainer**:
-    ```bash
-    python main.py
-    ```
+4. **Activate Environment**:
+```bash
+venv\scripts\activate
+```
 
-For more detailed instructions and configurations, visit the [OneTrainer GitHub page](https://github.com/Nerogar/OneTrainer).
+5. **Install Dependencies**:
+Ensure you have Python and pip installed. Then, install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+6. **Run OneTrainer**:
+```bash
+python main.py
+```
+
+## Setting up OneTrainer
+
+Check out my next blog post to learn how to get started with training SDXL LoRAs.

@@ -1,12 +1,10 @@
 ---
 layout: post
-title: How to Host a Webpage on GitHub Pages
+title: How to Create a GitHub Page
 meta: Hosting with GitHub Pages is as easy as cake, and that's no lie! This guide will show you how setting up is a cinch.
 posted: 04-12-2013
 category: blog
 ---
-
-# How to Create a GitHub Page
 
 Creating a GitHub Page is straightforward and there are two main ways to do it. Whether you want to create a main page for your GitHub username or a page for an existing repository, here’s a step-by-step guide.
 

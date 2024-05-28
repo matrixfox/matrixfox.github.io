@@ -59,7 +59,7 @@ To use ComfyUI, you need to download pre-trained models. Head over to [Civitai](
     - Better choice for landscape photorealistic realism images.
 
 - Pony Checkpoints
-    - Specialized for generating Anime artwork.
+    - Specialized for generating anime artwork.
     - Generally trained on standard sizes such as 512x512 pixels.
     - Trained on a dataset rich in pony art.
 
@@ -73,6 +73,7 @@ To use ComfyUI, you need to download pre-trained models. Head over to [Civitai](
     - [stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/sd_xl_base_1.0.safetensors)
 
 - Pony
+    - [Pony Diffusion V6 XL](https://civitai.com/models/257749?modelVersionId=290640)
     - [T-ponynai3](https://civitai.com/models/317902?modelVersionId=469115)
     - [anima_pencil-XL](https://civitai.com/models/261336?modelVersionId=505691)
 
