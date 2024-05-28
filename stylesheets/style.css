@@ -435,6 +435,9 @@ li ul {
 .alert-warning {
   border-left-color: #f0ad4e;
 }
+.posted {
+  color: #999;
+}
 /*
  *  Contact
  */
