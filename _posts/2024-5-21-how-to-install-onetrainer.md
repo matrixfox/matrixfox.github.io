@@ -51,4 +51,4 @@ python main.py
 
 ## Setting up OneTrainer
 
-Check out my next blog post to learn how to get started with training SDXL LoRAs.
+In my next article, I will be demonstrating how to <a href="http://matrixfox.com/blog/2024/05/28/onetrainer-training-sdxl-loras/">create an SDXL LoRa using OneTrainer</a>. This comprehensive guide will cover everything from the basics of SDXL LoRa's to the step-by-step process of setting up and using OneTrainer for optimal results. 
