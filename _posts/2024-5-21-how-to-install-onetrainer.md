@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How to Install OneTrainer
-meta: Get it right
+meta: OneTrainer is a comprehensive tool designed for training Stable Diffusion models. Providing a streamlined and efficient process for fine-tuning various models...
 posted: 2024-5-21
 category: blog
 draft: true
 ---
 
-OneTrainer is a comprehensive tool designed for training Stable Diffusion models. Providing a streamlined and efficient process for fine-tuning various versions, including Stable Diffusion 1.5, 2.0, 2.1, SDXL, Würstchen-v2, and inpainting models. To install OneTrainer from GitHub, follow these steps:
+OneTrainer is a comprehensive tool designed for training Stable Diffusion models. Providing a streamlined and efficient process for fine-tuning various models, including Stable Diffusion 1.5, 2.0, 2.1, SDXL, Würstchen-v2, and inpainting models. To install OneTrainer from GitHub, follow these steps:
 
 ## Prerequisites
 
