@@ -32,7 +32,7 @@ First, start collecting images of the subject you want to train. This could be a
 - **5 to 10**: Your LoRa won't have much variation but can still work.
 - **11 to 20**: A good spot. Can generate a solid LoRa.
 - **21 to 50**: Ideal range. This is what we want for a well-trained model.
-- **50 to 100**: A bit excessive, but works when you want to mix portraits and full-body shots.
+- **51 to 100**: A bit excessive, but works when you want to mix portraits and full-body shots.
 - **More than 100**: Likely overkill and not necessary for most purposes.
 
 ### Datasets
@@ -120,6 +120,10 @@ If you made it this far, give yourself a pat on the back. Now you're ready to cl
 ## LoRA Output
 
 Here's a couple of results generated with the newly created LoRA. Not bad, considering the images were hastily chosen from Google Images. I just wanted to demonstrate that it can be done with virtually anyone.
+
+<div class="alert alert-primary" role="alert">
+  Here's the demo <a href="https://www.dropbox.com/scl/fo/24n3xu7dc6r0zjetc1zfr/AJywUoPyHq0gcKby4NZ2TxQ?rlkey=3tmyn7g4i1hli9zlfi93gvfhk&st=iv5n3j93&dl=0">Trump LoRa</a> file that was trained off the <a href="https://civitai.com/models/241415/picxreal">picxReal_10</a> model.
+</div>
 
 <div class="row">
   <div class="col-md-6"><img src="/images/onetrainer-sdxl-lora/ComfyUI_00087_.png" alt="ComfyUI Trump LoRa Output"></div>
