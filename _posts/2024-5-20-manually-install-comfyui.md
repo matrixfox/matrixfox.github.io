@@ -2,7 +2,7 @@
 layout: post
 title: How to manually install ComfyUI
 meta: ComfyUI is an advanced graphical user interface for Stable Diffusion, featuring a modular node interface that provides enhanced control over the image generation process. This allows users to fine-tune and customize their generated images with greater precision and flexibility.
-posted: 2024-5-22
+posted: 2024-5-20
 category: blog
 ---
 
